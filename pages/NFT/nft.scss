@@ -1,0 +1,29 @@
+.nfts{
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    &__table-row{
+        background: #e7e2ff;
+        transition: all .4s ease;
+        cursor: pointer;
+        &:hover{
+            background: #d6ceff;
+        }
+        &:hover img{
+            width: 54px;
+        }
+    }
+    &__table-cell{
+        font-weight: 600 !important;
+        img{
+            width: 50px;
+            border-radius: 50%;
+            transition: all .4s ease;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.loader{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.signup__main .loader,
+.signin__main .loader {
+    position: absolute;
+    left: 50%;
+    top: 82%;
+    transform: translateX(-50%);
+
+}

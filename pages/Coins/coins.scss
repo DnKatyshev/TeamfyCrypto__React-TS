@@ -1,0 +1,60 @@
+@import '../../baseStyles/base.scss' ;
+
+.coins{
+    .coins__subtitle{
+        color: #828282;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+
+    .coins__table{
+        margin: 50px 0;
+    
+        .table{
+    
+            &__head{
+                background: #f0edff;
+                .table__head-text{
+                    font-weight: 600;
+                }
+            }
+            &__body{
+    
+            }
+            &__price{
+                font-weight: 700;
+            }
+            &__row{
+                background: #F5F3FF;
+                .table__percent-plus{
+                    color: #4aff41;
+                }
+                .table__percent-minus{
+                    color: #ff5141;
+                }
+                &:hover img{
+                    width: 58px;
+                }
+            }
+            
+            &__coin-name{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                font-weight: 700;
+                transition: all .3s ease;
+                img{
+                    width: 50px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+        .table__link:hover .table__coin-name{
+            color: #f6baff;
+        }
+    
+    }
+}

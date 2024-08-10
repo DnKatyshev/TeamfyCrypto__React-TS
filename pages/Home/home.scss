@@ -1,0 +1,162 @@
+@import '../../baseStyles/base.scss' ;
+
+.home{
+    &__body{
+
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        span{
+            color: #6956E5;
+        }
+    }
+    &__subtitle{
+        color: #828282;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+
+
+    &__charts{
+        display: grid;
+        grid-template: repeat(2, 1fr) / 47% 47%;
+        justify-content: center;
+        gap: 20px;
+        .home__charts-title{
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__bar-chart{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        padding: 32px;
+        border: 1px solid #d7d9de;
+        border-radius: 10px;
+        .home__bar-chart-labels{
+            display: grid;
+            grid-template: repeat(2, auto) / 50% 50%;
+            column-gap: 50px;
+            row-gap: 14px;
+        }
+        .home__bar-chart-label{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        p{
+            color: #828282;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+
+    &__pie-chart{
+        position: relative;
+        padding: 32px;
+        border: 1px solid #d7d9de;
+        border-radius: 10px;
+        overflow: hidden;
+        .home__charts-title{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .home__pie-chart-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+        }
+        .home__pie-chart-labels{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        .home__pie-chart-label{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        p{
+            color: #828282;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        span{
+            
+        }
+    }
+
+    &__line-chart{
+        grid-column: span 2;
+        padding: 32px;
+        border: 1px solid #d7d9de;
+        border-radius: 10px;
+    }
+
+
+    .home__table{
+        margin: 50px 0;
+        .home__table-title{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .table{
+
+            &__head{
+                background: #f0edff;
+                .table__head-text{
+                    font-weight: 600;
+                }
+            }
+            &__body{
+
+            }
+            &__price{
+                font-weight: 700;
+            }
+            &__row{
+                background: #F5F3FF;
+                .table__percent-plus{
+                    color: #4aff41;
+                }
+                .table__percent-minus{
+                    color: #ff5141;
+                }
+                &:hover img{
+                    width: 58px;
+                }
+            }
+            
+            &__coin-name{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                font-weight: 700;
+                transition: all .3s ease;
+                img{
+                    width: 50px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+        .table__link:hover .table__coin-name{
+            color: #f6baff;
+        }
+
+    }
+
+
+}

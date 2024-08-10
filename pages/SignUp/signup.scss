@@ -1,0 +1,127 @@
+@import '../../baseStyles/base.scss';
+
+.signup{
+    &__main{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        align-items: center;
+        max-width: 600px;
+        padding: 20px;
+        margin: 50px auto 0 auto;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0 0 30px 1px #6956E5;
+    }
+
+    &__title{
+        color: #6956E5;
+        font-size: clamp(24px, 3vw, 32px);
+        font-weight: 600;
+    }
+
+    &-number__item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    
+    &__group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label{
+        color: #a294ff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    &__input{
+        padding: 12px 2px;
+        color: #000;
+        background: transparent;
+        border-bottom: 2px solid rgba(105, 86, 229, .5);
+        font-size: 16px;
+        font-weight: 500;
+        transition: all .4s ease;
+        &:focus{
+            border-bottom: 2px solid rgba(105, 86, 229, 1);
+        }
+    }
+
+
+    &__btn{
+        padding: 15px 30px;
+        max-width: 170px;
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        background: #55adff;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background: #7dc0ff
+        }
+        &:disabled{
+            opacity: .3;
+        }
+    }
+
+
+    &__error{
+        color: orange;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+}
+
+.authByNumber{
+    margin: 0 auto;
+    padding: 14px 24px;
+    text-align: center;
+    background: #74ff7a;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background: #8bfe91;
+    }
+}
+
+.phone-container{
+    margin-top: 20px;
+}
+.phone-input{
+    width: 100% !important;
+}
+
+.otp-container{
+    column-gap: 12px;
+}
+.otp-input{
+    width: 30px !important;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #67ff64;
+    background: #f9fff9;
+    border-radius: 4px;
+}
