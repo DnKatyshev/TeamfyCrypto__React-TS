@@ -60,6 +60,9 @@ width: 100%;
 min-height: 110vh;
 padding: 30px;
 background-color: #F5F6FA;
+@media(max-width: 992px){
+    padding: 10px;
+}
 }
 .fixed-page {
 overflow: clip;

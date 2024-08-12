@@ -18,6 +18,7 @@ export const useStyle = makeStyles(() => {
         },
         header__body_mob: {
             justifyContent: "center",
+            gap: "20px"
         },
         header__p: {
             color: '#000 !important',

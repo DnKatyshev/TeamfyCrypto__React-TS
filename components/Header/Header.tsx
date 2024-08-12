@@ -34,7 +34,7 @@ export const Header:FC <IHeader> = ({setOpenDrawerFlag, openDrawerFlag, setTrans
   const location = useLocation()
 
   const classes = useStyle()
-  const matches = useMediaQuery('(min-width:991px)'); // стилизация
+  const matches = useMediaQuery('(min-width:991px)'); // стилизация + адаптация
 
   const [headerDrawer, setHeaderDrawer] = useState(false)
 
